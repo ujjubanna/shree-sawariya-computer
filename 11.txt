@@ -1,0 +1,120 @@
+import { Link } from "wouter";
+import { Phone, MessageCircle, ArrowRight } from "lucide-react";
+
+function ContactBlock() {
+  return (
+    <section
+      className="mt-6 rounded-2xl border bg-white/70 p-4 backdrop-blur soft-ring grain"
+      data-testid="section-contact"
+    >
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <a
+          className="btn btn-primary w-full"
+          href="tel:7425805337"
+          data-testid="button-call"
+        >
+          <Phone className="h-5 w-5" aria-hidden="true" />
+          कॉल करें
+        </a>
+
+        <a
+          className="btn btn-ghost w-full"
+          href="https://wa.me/917425805337"
+          target="_blank"
+          rel="noreferrer"
+          data-testid="button-whatsapp"
+        >
+          <MessageCircle className="h-5 w-5" aria-hidden="true" />
+          व्हाट्सएप करें
+        </a>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-white/70 p-3 text-sm leading-relaxed text-foreground/80">
+        <div className="font-semibold text-foreground" data-testid="text-phone-numbers">
+          7425805337, 7851988875
+        </div>
+        <div className="mt-1" data-testid="text-tip">
+          टिप: हमारा नंबर सेव करें और व्हाट्सएप पर मैसेज करें
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Home() {
+  return (
+    <main className="page">
+      <div className="container-pro py-10 sm:py-14">
+        <header className="mx-auto flex max-w-[720px] flex-col items-center text-center">
+          <div
+            className="grid h-28 w-28 place-items-center rounded-full bg-white/70 text-center soft-ring grain"
+            data-testid="img-logo"
+          >
+            <div
+              className="px-3 text-[13px] font-bold leading-tight text-foreground/90"
+              data-testid="text-logo"
+            >
+              श्री सांवरिया
+              <br />
+              कंप्यूटर इंस्टिट्यूट
+            </div>
+          </div>
+
+          <h1
+            className="mt-6 text-display text-4xl leading-[1.05] text-foreground sm:text-5xl"
+            data-testid="text-hero-title"
+          >
+            एडमिशन ओपन
+          </h1>
+
+          <p
+            className="mt-3 text-base font-medium text-foreground/80 sm:text-lg"
+            data-testid="text-hero-subtitle"
+          >
+            परीक्षा और नौकरी के लिए प्रैक्टिकल कंप्यूटर स्किल सीखें
+          </p>
+
+          <p
+            className="mt-4 max-w-[56ch] text-sm leading-relaxed text-foreground/75 sm:text-base"
+            data-testid="text-hero-description"
+          >
+            फोकस्ड ट्रेनिंग | साफ मार्गदर्शन | पूरी प्रैक्टिकल प्रैक्टिस
+            <br />
+            विद्यार्थियों और कामकाजी प्रोफेशनल्स के लिए परफेक्ट
+          </p>
+
+          <div className="mt-6 grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
+            <Link
+              href="/rscit"
+              className="btn btn-primary w-full"
+              data-testid="button-open-rscit"
+            >
+              RS-CIT कोर्स देखें
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            </Link>
+
+            <Link
+              href="/tally"
+              className="btn btn-ghost w-full"
+              data-testid="button-open-tally"
+            >
+              Tally कोर्स देखें
+              <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            </Link>
+          </div>
+
+          <ContactBlock />
+        </header>
+
+        <footer
+          className="mt-10 border-t pt-6 text-center text-sm text-foreground/70"
+          data-testid="footer"
+        >
+          © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट
+          <br />
+          सभी अधिकार सुरक्षित
+        </footer>
+      </div>
+    </main>
+  );
+}
