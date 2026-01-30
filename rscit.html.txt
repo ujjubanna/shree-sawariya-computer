@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS-CIT कोर्स</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RS-CIT कोर्स – कंप्यूटर सिखने का सही विकल्प</h1>
+        <nav>
+            <a href="index.html">होम</a> |
+            <a href="rscit.html">RS-CIT</a> |
+            <a href="tally.html">Tally</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <p>RS-CIT (Rajasthan State Certificate in Information Technology) राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। यह कोर्स उन सभी के लिए बहुत जरूरी है जो ऑफिस, बैंकिंग, सरकारी नौकरी या निजी नौकरी में कंप्यूटर का उपयोग करना चाहते हैं।</p>
+        </section>
+
+        <section>
+            <h2>RS-CIT कोर्स क्यों जरूरी है?</h2>
+            <ul>
+                <li>आज हर क्षेत्र में कंप्यूटर ज्ञान अनिवार्य हो गया है।</li>
+                <li>सरकारी और निजी नौकरी में RS-CIT सर्टिफिकेट रखने से आपका चयन आसान होता है।</li>
+                <li>ऑफिस का काम, डेटा एंट्री, रिपोर्ट तैयार करना, प्रेजेंटेशन और ई-मेल लिखना इस कोर्स से आसानी से सीख सकते हैं।</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>RS-CIT कोर्स कहां-कहां अनिवार्य है?</h2>
+            <ul>
+                <li>राजस्थान के सरकारी विभागों में नौकरी के लिए अनिवार्य।</li>
+                <li>बैंकिंग, बीमा, और अन्य ऑफिस और डेटा एंट्री नौकरी में लाभकारी।</li>
+                <li>सरकारी और निजी परीक्षाओं में कंप्यूटर स्किल के लिए मददगार।</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>RS-CIT कोर्स की अवधि और फीस</h2>
+            <p>अवधि: 3 महीने (प्रैक्टिकल और थ्योरी दोनों)</p>
+            <p>फीस: ₹4200 (संपूर्ण कोर्स के लिए)</p>
+        </section>
+
+        <section>
+            <h2>RS-CIT कोर्स में क्या-क्या सीखेंगे?</h2>
+            <h3>1️⃣ MS Word</h3>
+            <ul>
+                <li>Resume / Biodata बनाना</li>
+                <li>Magazine Page Design</li>
+                <li>Pamphlet और Template तैयार करना</li>
+                <li>Bills, Invoices, Letters टाइप करना</li>
+                <li>हिंदी और अंग्रेजी टाइपिंग प्रैक्टिस</li>
+            </ul>
+
+            <h3>2️⃣ MS Excel</h3>
+            <ul>
+                <li>Bills और Result Sheet तैयार करना</li>
+                <li>Data Entry और Database Management</li>
+                <li>Formulas और Practical Work</li>
+            </ul>
+
+            <h3>3️⃣ MS PowerPoint</h3>
+            <ul>
+                <li>Professional Presentation बनाना</li>
+                <li>Office और Interview के लिए Slides तैयार करना</li>
+                <li>संपूर्ण Practical Training</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>RS-CIT कोर्स के लाभ</h2>
+            <ul>
+                <li>प्रैक्टिकल और थ्योरी दोनों पर फोकस</li>
+                <li>हर टॉपिक में अभ्यास</li>
+                <li>नौकरी और इंटरव्यू के लिए तैयार</li>
+                <li>सर्टिफिकेट राजस्थान सरकार मान्यता प्राप्त</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>अभी रजिस्टर करें</h2>
+            <p>📞 संपर्क नंबर: 7425805337, 7851988875</p>
+            <p>📧 ईमेल: <a href="mailto:ujjubanna123@gmail.com">ujjubanna123@gmail.com</a></p>
+            <p>🏠 पता: Laxmanpura, Nath Ji Maharaj Mandir के पास, Nana</p>
+            <p>📸 इंस्टाग्राम: <a href="https://instagram.com/sawariya_computerhub" target="_blank">@sawariya_computerhub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sawariya Computer Hub</p>
+    </footer>
+</body>
+</html>
