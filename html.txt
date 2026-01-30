@@ -1,0 +1,223 @@
+-11
++218
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta property="og:title" content="Replit Design" />
+    <meta property="og:description" content="A website made with Replit Design" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Sawariya Computer Institute</title>
+    <meta property="og:title" content="Shree Sawariya Computer Institute" />
+    <meta
+      property="og:description"
+      content="RS-CIT, Tally, and Basic Computer courses with friendly guidance and practical learning. Call 7425805337 / 7851988875."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@replit" />
+    <meta name="twitter:title" content="Replit Design" />
+    <meta name="twitter:description" content="A website made with Replit Design" />
+    <meta name="twitter:title" content="Shree Sawariya Computer Institute" />
+    <meta
+      name="twitter:description"
+      content="RS-CIT, Tally, and Basic Computer courses with friendly guidance and practical learning. Call 7425805337 / 7851988875."
+    />
+    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <a class="skip" href="#main" data-testid="link-skip">Skip to content</a>
+    <header class="site-header" data-testid="header-site">
+      <div class="container header-inner">
+        <div class="brand" data-testid="brand-institute">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <div class="brand-text">
+            <p class="brand-kicker" data-testid="text-kicker">Computer Institute</p>
+            <h1 class="brand-name" data-testid="text-institute-name">
+              Shree Sawariya Computer Institute
+            </h1>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Primary" data-testid="nav-primary">
+          <a class="nav-link" href="#courses" data-testid="link-courses">Courses</a>
+          <a class="nav-link" href="#contact" data-testid="link-contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="main" data-testid="main-content">
+      <section class="hero" aria-label="Hero" data-testid="section-hero">
+        <div class="container hero-inner">
+          <div class="hero-copy" data-testid="panel-hero-copy">
+            <p class="pill" data-testid="text-hero-pill">Admissions Open</p>
+            <h2 class="hero-title" data-testid="text-hero-title">
+              Learn practical computer skills for exams and jobs.
+            </h2>
+            <p class="hero-subtitle" data-testid="text-hero-subtitle">
+              Focused training, clear guidance, and hands-on practice — perfect for
+              students and working professionals.
+            </p>
+            <div class="cta-row" data-testid="group-cta">
+              <a
+                class="btn btn-primary"
+                href="tel:7425805337"
+                data-testid="button-call-primary"
+              >
+                Call 7425805337
+              </a>
+              <a
+                class="btn btn-ghost"
+                href="#courses"
+                data-testid="button-view-courses"
+              >
+                View Courses
+              </a>
+            </div>
+            <div class="quick-info" data-testid="panel-quick-info">
+              <div class="qi" data-testid="card-qi-1">
+                <p class="qi-label" data-testid="text-qi-label-1">Popular</p>
+                <p class="qi-value" data-testid="text-qi-value-1">RS-CIT</p>
+              </div>
+              <div class="qi" data-testid="card-qi-2">
+                <p class="qi-label" data-testid="text-qi-label-2">Accounting</p>
+                <p class="qi-value" data-testid="text-qi-value-2">Tally</p>
+              </div>
+              <div class="qi" data-testid="card-qi-3">
+                <p class="qi-label" data-testid="text-qi-label-3">Foundation</p>
+                <p class="qi-value" data-testid="text-qi-value-3">Basic Computer</p>
+              </div>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Contact card" data-testid="card-hero">
+            <div class="hero-card-top">
+              <h3 class="card-title" data-testid="text-card-title">Contact</h3>
+              <p class="card-sub" data-testid="text-card-sub">
+                Call or WhatsApp for batch timings.
+              </p>
+            </div>
+            <div class="contact-list" id="contact" data-testid="section-contact">
+              <a
+                class="contact-item"
+                href="tel:7425805337"
+                data-testid="link-phone-7425805337"
+              >
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">7425805337</span>
+              </a>
+              <a
+                class="contact-item"
+                href="tel:7851988875"
+                data-testid="link-phone-7851988875"
+              >
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">7851988875</span>
+              </a>
+            </div>
+            <div class="divider" role="presentation"></div>
+            <p class="note" data-testid="text-note">
+              Tip: Save our number and message on WhatsApp.
+            </p>
+          </aside>
+        </div>
+      </section>
+      <section class="section" id="courses" data-testid="section-courses">
+        <div class="container">
+          <div class="section-head" data-testid="panel-courses-head">
+            <h2 class="section-title" data-testid="text-courses-title">Courses</h2>
+            <p class="section-sub" data-testid="text-courses-sub">
+              Choose a course and build confidence with practice.
+            </p>
+          </div>
+          <div class="grid" data-testid="grid-courses">
+            <article class="card" data-testid="card-course-rscit">
+              <h3 class="card-h" data-testid="text-course-title-rscit">RS-CIT</h3>
+              <p class="card-p" data-testid="text-course-desc-rscit">
+                Exam-oriented computer course with clear concepts and regular practice.
+              </p>
+              <ul class="list" data-testid="list-course-rscit">
+                <li data-testid="text-course-point-rscit-1">Smart notes & basics</li>
+                <li data-testid="text-course-point-rscit-2">Practice tests</li>
+                <li data-testid="text-course-point-rscit-3">Doubt clearing</li>
+              </ul>
+            </article>
+            <article class="card" data-testid="card-course-tally">
+              <h3 class="card-h" data-testid="text-course-title-tally">Tally</h3>
+              <p class="card-p" data-testid="text-course-desc-tally">
+                Learn accounting basics and real-world billing entries with hands-on work.
+              </p>
+              <ul class="list" data-testid="list-course-tally">
+                <li data-testid="text-course-point-tally-1">Ledger & vouchers</li>
+                <li data-testid="text-course-point-tally-2">GST basics</li>
+                <li data-testid="text-course-point-tally-3">Practical examples</li>
+              </ul>
+            </article>
+            <article class="card" data-testid="card-course-basic">
+              <h3 class="card-h" data-testid="text-course-title-basic">Basic Computer</h3>
+              <p class="card-p" data-testid="text-course-desc-basic">
+                Perfect for beginners — typing, MS Office, internet, and day-to-day computer use.
+              </p>
+              <ul class="list" data-testid="list-course-basic">
+                <li data-testid="text-course-point-basic-1">Typing & shortcuts</li>
+                <li data-testid="text-course-point-basic-2">MS Word / Excel / PowerPoint</li>
+                <li data-testid="text-course-point-basic-3">Internet & email</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-alt" data-testid="section-cta">
+        <div class="container cta-slab" data-testid="panel-cta-slab">
+          <div>
+            <h2 class="section-title" data-testid="text-cta-title">
+              Ready to join?
+            </h2>
+            <p class="section-sub" data-testid="text-cta-sub">
+              Call now to know fees, timings, and available batches.
+            </p>
+          </div>
+          <div class="cta-row" data-testid="group-cta-bottom">
+            <a
+              class="btn btn-primary"
+              href="tel:7851988875"
+              data-testid="button-call-secondary"
+            >
+              Call 7851988875
+            </a>
+            <a class="btn btn-ghost" href="#contact" data-testid="button-contact">
+              Contact
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-testid="footer-site">
+      <div class="container footer-inner">
+        <p class="footer-text" data-testid="text-footer">
+          © <span data-testid="text-year">2026</span> Shree Sawariya Computer Institute
+        </p>
+        <div class="footer-links" data-testid="group-footer-links">
+          <a class="footer-link" href="tel:7425805337" data-testid="link-footer-call-1">
+            7425805337
+          </a>
+          <span class="dot" aria-hidden="true">•</span>
+          <a class="footer-link" href="tel:7851988875" data-testid="link-footer-call-2">
+            7851988875
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
