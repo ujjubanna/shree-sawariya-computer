@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally कोर्स – श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
+        <h1>Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <p>Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।</p>
+        </div>
+
+        <div class="section">
+            <h2>Tally क्यों जरूरी है?</h2>
+            <ul>
+                <li>हर दुकान और ऑफिस में अकाउंटिंग</li>
+                <li>GST, बिलिंग और रिपोर्टिंग</li>
+                <li>जल्दी नौकरी के अवसर</li>
+                <li>कम पढ़ाई में अच्छा करियर</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>करियर विकल्प</h2>
+            <ul>
+                <li>Tally ऑपरेटर</li>
+                <li>अकाउंटेंट</li>
+                <li>बिलिंग एग्जीक्यूटिव</li>
+                <li>GST असिस्टेंट</li>
+                <li>बिजनेस अकाउंटिंग</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Tally में क्या सीखेंगे?</h2>
+            <ul>
+                <li>कंपनी बनाना</li>
+                <li>लेजर बनाना</li>
+                <li>खरीद और बिक्री एंट्री</li>
+                <li>कैश / बैंक एंट्री</li>
+                <li>डेबिट और क्रेडिट कॉन्सेप्ट</li>
+                <li>GST सेटअप और इनवॉइस</li>
+                <li>प्रॉफिट एंड लॉस</li>
+                <li>बैलेंस शीट</li>
+                <li>TDS जानकारी</li>
+                <li>स्टॉक और इन्वेंट्री</li>
+                <li>रियल ऑफिस प्रैक्टिकल</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>अवधि और फीस</h2>
+            <ul>
+                <li>अवधि: 3 महीने</li>
+                <li>फीस: ₹6000</li>
+            </ul>
+        </div>
+
+        <div class="contact section">
+            <h2>संपर्क करें</h2>
+            <p>📞 7425805337, 7851988875</p>
+            <p>📧 ujjubanna123@gmail.com</p>
+            <p>📸 sawariya_computerhub</p>
+            <p>🏠 लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा</p>
+            <div class="contact-buttons">
+                <a href="tel:7425805337" class="btn">कॉल करें</a>
+                <a href="https://wa.me/917425805337" class="btn btn-secondary">व्हाट्सएप</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>सभी अधिकार सुरक्षित</p>
+    </footer>
+</body>
+</html>
