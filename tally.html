@@ -1,83 +1,154 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tally कोर्स – श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
-        <h1>Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका</h1>
-    </header>
+import { Link } from "wouter";
+import { ArrowLeft, Phone, MessageCircle } from "lucide-react";
 
-    <div class="container">
-        <div class="section">
-            <p>Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।</p>
+function ContactSection() {
+  return (
+    <section
+      className="mt-8 rounded-2xl border bg-white/70 p-4 backdrop-blur soft-ring grain"
+      data-testid="section-contact"
+    >
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <a
+          className="btn btn-primary w-full"
+          href="tel:7425805337"
+          data-testid="button-call"
+        >
+          <Phone className="h-5 w-5" aria-hidden="true" />
+          कॉल करें
+        </a>
+        <a
+          className="btn btn-ghost w-full"
+          href="https://wa.me/917425805337"
+          target="_blank"
+          rel="noreferrer"
+          data-testid="button-whatsapp"
+        >
+          <MessageCircle className="h-5 w-5" aria-hidden="true" />
+          व्हाट्सएप करें
+        </a>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-white/70 p-3 text-sm leading-relaxed text-foreground/80">
+        <div className="font-semibold text-foreground" data-testid="text-contact-details">
+          📞 7425805337, 7851988875
+          <br />
+          📧 ujjubanna123@gmail.com
+          <br />
+          📸 sawariya_computerhub
+          <br />
+          🏠 लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div class="section">
-            <h2>Tally क्यों जरूरी है?</h2>
-            <ul>
-                <li>हर दुकान और ऑफिस में अकाउंटिंग</li>
-                <li>GST, बिलिंग और रिपोर्टिंग</li>
-                <li>जल्दी नौकरी के अवसर</li>
-                <li>कम पढ़ाई में अच्छा करियर</li>
+function Bullet({ children, testId }: { children: React.ReactNode; testId: string }) {
+  return (
+    <li className="flex gap-2" data-testid={testId}>
+      <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full bg-[hsl(var(--primary))]" aria-hidden="true" />
+      <span className="text-foreground/80">{children}</span>
+    </li>
+  );
+}
+
+export default function Tally() {
+  return (
+    <main className="page">
+      <div className="container-pro py-8 sm:py-12">
+        <header className="flex items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="btn btn-ghost px-3 py-2"
+            data-testid="link-back-home"
+          >
+            <ArrowLeft className="h-5 w-5" aria-hidden="true" />
+            वापस
+          </Link>
+
+          <div
+            className="rounded-full border bg-white/60 px-3 py-1 text-xs font-semibold text-foreground/80"
+            data-testid="badge-course"
+          >
+            कोर्स विवरण
+          </div>
+        </header>
+
+        <article className="mt-6 rounded-2xl border bg-white/70 p-5 backdrop-blur soft-ring grain">
+          <h1 className="text-display text-2xl sm:text-3xl" data-testid="text-title">
+            Tally कोर्स – अकाउंटिंग में करियर बनाने का सुनहरा मौका
+          </h1>
+
+          <p className="mt-4 text-sm leading-relaxed text-foreground/80" data-testid="text-intro">
+            Tally आज सबसे ज्यादा इस्तेमाल होने वाला अकाउंटिंग सॉफ्टवेयर है। छोटी दुकान से लेकर बड़ी कंपनी तक हर जगह Tally की जरूरत होती है।
+          </p>
+
+          <section className="mt-6" data-testid="section-why">
+            <h2 className="text-base font-bold" data-testid="text-heading-why">
+              Tally क्यों जरूरी है?
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-why-1">हर दुकान और ऑफिस में अकाउंटिंग</Bullet>
+              <Bullet testId="bullet-why-2">GST, बिलिंग और रिपोर्टिंग</Bullet>
+              <Bullet testId="bullet-why-3">जल्दी नौकरी के अवसर</Bullet>
+              <Bullet testId="bullet-why-4">कम पढ़ाई में अच्छा करियर</Bullet>
             </ul>
-        </div>
+          </section>
 
-        <div class="section">
-            <h2>करियर विकल्प</h2>
-            <ul>
-                <li>Tally ऑपरेटर</li>
-                <li>अकाउंटेंट</li>
-                <li>बिलिंग एग्जीक्यूटिव</li>
-                <li>GST असिस्टेंट</li>
-                <li>बिजनेस अकाउंटिंग</li>
+          <section className="mt-6" data-testid="section-career">
+            <h2 className="text-base font-bold" data-testid="text-heading-career">
+              करियर विकल्प
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-career-1">Tally ऑपरेटर</Bullet>
+              <Bullet testId="bullet-career-2">अकाउंटेंट</Bullet>
+              <Bullet testId="bullet-career-3">बिलिंग एग्जीक्यूटिव</Bullet>
+              <Bullet testId="bullet-career-4">GST असिस्टेंट</Bullet>
+              <Bullet testId="bullet-career-5">बिजनेस अकाउंटिंग</Bullet>
             </ul>
-        </div>
+          </section>
 
-        <div class="section">
-            <h2>Tally में क्या सीखेंगे?</h2>
-            <ul>
-                <li>कंपनी बनाना</li>
-                <li>लेजर बनाना</li>
-                <li>खरीद और बिक्री एंट्री</li>
-                <li>कैश / बैंक एंट्री</li>
-                <li>डेबिट और क्रेडिट कॉन्सेप्ट</li>
-                <li>GST सेटअप और इनवॉइस</li>
-                <li>प्रॉफिट एंड लॉस</li>
-                <li>बैलेंस शीट</li>
-                <li>TDS जानकारी</li>
-                <li>स्टॉक और इन्वेंट्री</li>
-                <li>रियल ऑफिस प्रैक्टिकल</li>
+          <section className="mt-6" data-testid="section-learn">
+            <h2 className="text-base font-bold" data-testid="text-heading-learn">
+              Tally में क्या सीखेंगे?
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-learn-1">कंपनी बनाना</Bullet>
+              <Bullet testId="bullet-learn-2">लेजर बनाना</Bullet>
+              <Bullet testId="bullet-learn-3">खरीद और बिक्री एंट्री</Bullet>
+              <Bullet testId="bullet-learn-4">कैश / बैंक एंट्री</Bullet>
+              <Bullet testId="bullet-learn-5">डेबिट और क्रेडिट कॉन्सेप्ट</Bullet>
+              <Bullet testId="bullet-learn-6">GST सेटअप और इनवॉइस</Bullet>
+              <Bullet testId="bullet-learn-7">प्रॉफिट एंड लॉस</Bullet>
+              <Bullet testId="bullet-learn-8">बैलेंस शीट</Bullet>
+              <Bullet testId="bullet-learn-9">TDS जानकारी</Bullet>
+              <Bullet testId="bullet-learn-10">स्टॉक और इन्वेंट्री</Bullet>
+              <Bullet testId="bullet-learn-11">रियल ऑफिस प्रैक्टिकल</Bullet>
             </ul>
-        </div>
+          </section>
 
-        <div class="section">
-            <h2>अवधि और फीस</h2>
-            <ul>
-                <li>अवधि: 3 महीने</li>
-                <li>फीस: ₹6000</li>
+          <section className="mt-6" data-testid="section-duration-fee">
+            <h2 className="text-base font-bold" data-testid="text-heading-duration-fee">
+              अवधि और फीस
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-duration">अवधि: 3 महीने</Bullet>
+              <Bullet testId="bullet-fee">फीस: ₹6000</Bullet>
             </ul>
-        </div>
+          </section>
+        </article>
 
-        <div class="contact section">
-            <h2>संपर्क करें</h2>
-            <p>📞 7425805337, 7851988875</p>
-            <p>📧 ujjubanna123@gmail.com</p>
-            <p>📸 sawariya_computerhub</p>
-            <p>🏠 लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा</p>
-            <div class="contact-buttons">
-                <a href="tel:7425805337" class="btn">कॉल करें</a>
-                <a href="https://wa.me/917425805337" class="btn btn-secondary">व्हाट्सएप</a>
-            </div>
-        </div>
-    </div>
+        <ContactSection />
 
-    <footer>
-        <p>© 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>सभी अधिकार सुरक्षित</p>
-    </footer>
-</body>
-</html>
+        <footer
+          className="mt-10 border-t pt-6 text-center text-sm text-foreground/70"
+          data-testid="footer"
+        >
+          © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट
+          <br />
+          सभी अधिकार सुरक्षित
+        </footer>
+      </div>
+    </main>
+  );
+}
