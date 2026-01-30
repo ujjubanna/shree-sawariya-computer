@@ -1,96 +1,191 @@
-<!DOCTYPE html>
-<html lang="hi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RS-CIT कोर्स – श्री सांवरिया कंप्यूटर इंस्टिट्यूट</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="logo">श्री सांवरिया कंप्यूटर इंस्टिट्यूट</div>
-        <h1>RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प</h1>
-    </header>
+import { Link } from "wouter";
+import { ArrowLeft, Phone, MessageCircle } from "lucide-react";
 
-    <div class="container">
-        <div class="section">
-            <p>RS-CIT (Rajasthan State Certificate in Information Technology) राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है। यह कोर्स उन सभी के लिए बहुत जरूरी है जो ऑफिस, बैंकिंग, सरकारी नौकरी या निजी नौकरी में कंप्यूटर का उपयोग करना चाहते हैं।</p>
+function ContactSection() {
+  return (
+    <section
+      className="mt-8 rounded-2xl border bg-white/70 p-4 backdrop-blur soft-ring grain"
+      data-testid="section-contact"
+    >
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <a
+          className="btn btn-primary w-full"
+          href="tel:7425805337"
+          data-testid="button-call"
+        >
+          <Phone className="h-5 w-5" aria-hidden="true" />
+          कॉल करें
+        </a>
+        <a
+          className="btn btn-ghost w-full"
+          href="https://wa.me/917425805337"
+          target="_blank"
+          rel="noreferrer"
+          data-testid="button-whatsapp"
+        >
+          <MessageCircle className="h-5 w-5" aria-hidden="true" />
+          व्हाट्सएप करें
+        </a>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-white/70 p-3 text-sm leading-relaxed text-foreground/80">
+        <div className="font-semibold text-foreground" data-testid="text-contact-details">
+          📞 7425805337, 7851988875
+          <br />
+          📧 ujjubanna123@gmail.com
+          <br />
+          📸 sawariya_computerhub
+          <br />
+          🏠 लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div class="section">
-            <h2>RS-CIT कोर्स क्यों जरूरी है?</h2>
-            <ul>
-                <li>आज हर क्षेत्र में कंप्यूटर ज्ञान अनिवार्य हो गया है।</li>
-                <li>सरकारी और निजी नौकरी में RS-CIT सर्टिफिकेट से चयन आसान होता है।</li>
-                <li>ऑफिस का काम, डेटा एंट्री, रिपोर्ट, प्रेजेंटेशन और ई-मेल लिखना सीखते हैं।</li>
-            </ul>
-        </div>
+function Bullet({ children, testId }: { children: React.ReactNode; testId: string }) {
+  return (
+    <li className="flex gap-2" data-testid={testId}>
+      <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full bg-[hsl(var(--primary))]" aria-hidden="true" />
+      <span className="text-foreground/80">{children}</span>
+    </li>
+  );
+}
 
-        <div class="section">
-            <h2>RS-CIT कोर्स कहां-कहां अनिवार्य है?</h2>
-            <ul>
-                <li>राजस्थान के सरकारी विभागों में नौकरी के लिए अनिवार्य।</li>
-                <li>बैंकिंग, बीमा और ऑफिस जॉब में लाभकारी।</li>
-                <li>सरकारी और निजी परीक्षाओं में मददगार।</li>
-            </ul>
-        </div>
+export default function Rscit() {
+  return (
+    <main className="page">
+      <div className="container-pro py-8 sm:py-12">
+        <header className="flex items-center justify-between gap-4">
+          <Link
+            href="/"
+            className="btn btn-ghost px-3 py-2"
+            data-testid="link-back-home"
+          >
+            <ArrowLeft className="h-5 w-5" aria-hidden="true" />
+            वापस
+          </Link>
 
-        <div class="section">
-            <h2>अवधि और फीस</h2>
-            <ul>
-                <li>अवधि: 3 महीने (थ्योरी + प्रैक्टिकल)</li>
-                <li>फीस: ₹4200</li>
-            </ul>
-        </div>
+          <div
+            className="rounded-full border bg-white/60 px-3 py-1 text-xs font-semibold text-foreground/80"
+            data-testid="badge-course"
+          >
+            कोर्स विवरण
+          </div>
+        </header>
 
-        <div class="section">
-            <h2>RS-CIT में क्या सीखेंगे?</h2>
-            <h3>1️⃣ MS Word</h3>
-            <ul>
-                <li>रिज्यूमे / बायोडाटा बनाना</li>
-                <li>मैगजीन पेज डिजाइन</li>
-                <li>पेम्फलेट और टेम्पलेट</li>
-                <li>बिल, इनवॉइस, लेटर</li>
-                <li>हिंदी और अंग्रेजी टाइपिंग अभ्यास</li>
-            </ul>
-            <h3>2️⃣ MS Excel</h3>
-            <ul>
-                <li>बिल और रिजल्ट शीट</li>
-                <li>डेटा एंट्री और डेटाबेस</li>
-                <li>फॉर्मूला और प्रैक्टिकल</li>
-            </ul>
-            <h3>3️⃣ MS PowerPoint</h3>
-            <ul>
-                <li>प्रोफेशनल प्रेजेंटेशन</li>
-                <li>ऑफिस और इंटरव्यू स्लाइड्स</li>
-                <li>पूरी प्रैक्टिकल ट्रेनिंग</li>
-            </ul>
-        </div>
+        <article className="mt-6 rounded-2xl border bg-white/70 p-5 backdrop-blur soft-ring grain">
+          <h1 className="text-display text-2xl sm:text-3xl" data-testid="text-title">
+            RS-CIT कोर्स – कंप्यूटर सीखने का सही विकल्प
+          </h1>
 
-        <div class="section">
-            <h2>RS-CIT के लाभ</h2>
-            <ul>
-                <li>प्रैक्टिकल + थ्योरी</li>
-                <li>नौकरी और इंटरव्यू की तैयारी</li>
-                <li>राजस्थान सरकार मान्यता प्राप्त सर्टिफिकेट</li>
-            </ul>
-        </div>
+          <p className="mt-4 text-sm leading-relaxed text-foreground/80" data-testid="text-intro">
+            RS-CIT (Rajasthan State Certificate in Information Technology) राजस्थान सरकार द्वारा संचालित एक प्रमाणित कंप्यूटर कोर्स है।
+            यह कोर्स उन सभी के लिए बहुत जरूरी है जो ऑफिस, बैंकिंग, सरकारी नौकरी या निजी नौकरी में कंप्यूटर का उपयोग करते हैं।
+            यह कोर्स कंप्यूटर की बेसिक से लेकर एडवांस जानकारी तक सिखाता है।
+          </p>
 
-        <div class="contact section">
-            <h2>संपर्क करें</h2>
-            <p>📞 7425805337, 7851988875</p>
-            <p>📧 ujjubanna123@gmail.com</p>
-            <p>📸 sawariya_computerhub</p>
-            <p>🏠 लक्ष्मणपुरा, नाथ जी महाराज मंदिर के पास, नाणा</p>
-            <div class="contact-buttons">
-                <a href="tel:7425805337" class="btn">कॉल करें</a>
-                <a href="https://wa.me/917425805337" class="btn btn-secondary">व्हाट्सएप</a>
+          <section className="mt-6" data-testid="section-why">
+            <h2 className="text-base font-bold" data-testid="text-heading-why">
+              RS-CIT कोर्स क्यों जरूरी है?
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-why-1">आज हर क्षेत्र में कंप्यूटर ज्ञान अनिवार्य हो गया है।</Bullet>
+              <Bullet testId="bullet-why-2">सरकारी और निजी नौकरी में RS-CIT सर्टिफिकेट से चयन आसान होता है।</Bullet>
+              <Bullet testId="bullet-why-3">ऑफिस का काम, डेटा एंट्री, रिपोर्ट, प्रेजेंटेशन और ई-मेल लिखना सीखते हैं।</Bullet>
+            </ul>
+          </section>
+
+          <section className="mt-6" data-testid="section-required">
+            <h2 className="text-base font-bold" data-testid="text-heading-required">
+              RS-CIT कोर्स कहां-कहां अनिवार्य है?
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-required-1">राजस्थान के सरकारी विभागों में नौकरी के लिए अनिवार्य।</Bullet>
+              <Bullet testId="bullet-required-2">बैंकिंग, बीमा और ऑफिस जॉब में लाभकारी।</Bullet>
+              <Bullet testId="bullet-required-3">सरकारी और निजी परीक्षाओं में मददगार।</Bullet>
+            </ul>
+          </section>
+
+          <section className="mt-6" data-testid="section-duration-fee">
+            <h2 className="text-base font-bold" data-testid="text-heading-duration-fee">
+              अवधि और फीस
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-duration">अवधि: 3 महीने (थ्योरी + प्रैक्टिकल)</Bullet>
+              <Bullet testId="bullet-fee">फीस: ₹4200</Bullet>
+            </ul>
+          </section>
+
+          <section className="mt-6" data-testid="section-learn">
+            <h2 className="text-base font-bold" data-testid="text-heading-learn">
+              RS-CIT में क्या सीखेंगे?
+            </h2>
+
+            <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div
+                className="rounded-2xl border bg-white/60 p-4"
+                data-testid="card-word"
+              >
+                <div className="text-sm font-extrabold" data-testid="text-word-title">1️⃣ MS Word</div>
+                <ul className="mt-3 space-y-2 text-sm">
+                  <Bullet testId="text-word-1">रिज्यूमे / बायोडाटा बनाना</Bullet>
+                  <Bullet testId="text-word-2">मैगजीन पेज डिजाइन</Bullet>
+                  <Bullet testId="text-word-3">पेम्फलेट और टेम्पलेट</Bullet>
+                  <Bullet testId="text-word-4">बिल, इनवॉइस, लेटर</Bullet>
+                  <Bullet testId="text-word-5">हिंदी और अंग्रेजी टाइपिंग अभ्यास</Bullet>
+                </ul>
+              </div>
+
+              <div
+                className="rounded-2xl border bg-white/60 p-4"
+                data-testid="card-excel"
+              >
+                <div className="text-sm font-extrabold" data-testid="text-excel-title">2️⃣ MS Excel</div>
+                <ul className="mt-3 space-y-2 text-sm">
+                  <Bullet testId="text-excel-1">बिल और रिजल्ट शीट</Bullet>
+                  <Bullet testId="text-excel-2">डेटा एंट्री और डेटाबेस</Bullet>
+                  <Bullet testId="text-excel-3">फॉर्मूला और प्रैक्टिकल</Bullet>
+                </ul>
+              </div>
+
+              <div
+                className="rounded-2xl border bg-white/60 p-4"
+                data-testid="card-ppt"
+              >
+                <div className="text-sm font-extrabold" data-testid="text-ppt-title">3️⃣ MS PowerPoint</div>
+                <ul className="mt-3 space-y-2 text-sm">
+                  <Bullet testId="text-ppt-1">प्रोफेशनल प्रेजेंटेशन</Bullet>
+                  <Bullet testId="text-ppt-2">ऑफिस और इंटरव्यू स्लाइड्स</Bullet>
+                  <Bullet testId="text-ppt-3">पूरी प्रैक्टिकल ट्रेनिंग</Bullet>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
+          </section>
 
-    <footer>
-        <p>© 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट<br>सभी अधिकार सुरक्षित</p>
-    </footer>
-</body>
-</html>
+          <section className="mt-6" data-testid="section-benefits">
+            <h2 className="text-base font-bold" data-testid="text-heading-benefits">
+              RS-CIT के लाभ
+            </h2>
+            <ul className="mt-3 space-y-2 text-sm">
+              <Bullet testId="bullet-benefits-1">प्रैक्टिकल + थ्योरी</Bullet>
+              <Bullet testId="bullet-benefits-2">नौकरी और इंटरव्यू की तैयारी</Bullet>
+              <Bullet testId="bullet-benefits-3">राजस्थान सरकार मान्यता प्राप्त सर्टिफिकेट</Bullet>
+            </ul>
+          </section>
+        </article>
+
+        <ContactSection />
+
+        <footer
+          className="mt-10 border-t pt-6 text-center text-sm text-foreground/70"
+          data-testid="footer"
+        >
+          © 2026 श्री सांवरिया कंप्यूटर इंस्टिट्यूट
+          <br />
+          सभी अधिकार सुरक्षित
+        </footer>
+      </div>
+    </main>
+  );
+}
